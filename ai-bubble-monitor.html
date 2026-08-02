@@ -55,7 +55,7 @@
 <body>
 <div class="wrap">
   <h1>AI 泡沫壓力監控儀表板</h1>
-  <div class="sub">更新時間：2026-08-01 00:07　·　資料源：FRED / multpl / yfinance（免金鑰）</div>
+  <div class="sub">更新時間：2026-08-02 19:02　·　資料源：FRED / multpl / yfinance（免金鑰）</div>
 
   <div class="guide">
     <h3>這張表在看什麼？怎麼讀？</h3>
@@ -119,14 +119,14 @@
     <div class="sig">
       <span class="dot" style="background:var(--red)"></span>
       <span class="lbl">Shiller CAPE</span>
-      <span class="val">40.6</span>
+      <span class="val">40.9</span>
       <span class="note">>35 極端偏貴</span>
     </div>
     
     <div class="sig">
       <span class="dot" style="background:var(--red)"></span>
       <span class="lbl">Excess CAPE Yield</span>
-      <span class="val">0.05%</span>
+      <span class="val">0.03%</span>
       <span class="note"><1.35 股債相對估值警戒</span>
     </div>
     
@@ -178,7 +178,7 @@
     <div class="sig">
       <span class="dot" style="background:var(--red)"></span>
       <span class="lbl">逆回購 RRP 水位</span>
-      <span class="val">$1B</span>
+      <span class="val">$2B</span>
       <span class="note">水位偏低，流動性緩衝將盡</span>
     </div>
     
@@ -197,22 +197,22 @@
     <div class="sig">
       <span class="dot" style="background:var(--yellow)"></span>
       <span class="lbl">QQQ 那斯達克100</span>
-      <span class="val">684.4</span>
-      <span class="note">684.4 跌破月線 700.8（守年線）</span>
+      <span class="val">688.0</span>
+      <span class="note">688.0 跌破月線 701.0（守年線）</span>
     </div>
     
     <div class="sig">
       <span class="dot" style="background:var(--yellow)"></span>
       <span class="lbl">NVDA 輝達</span>
-      <span class="val">196.4</span>
-      <span class="note">196.4 跌破月線 203.1（守年線）</span>
+      <span class="val">200.8</span>
+      <span class="note">200.8 跌破月線 203.3（守年線）</span>
     </div>
     
     <div class="sig">
       <span class="dot" style="background:var(--yellow)"></span>
       <span class="lbl">TSM 台積電ADR</span>
-      <span class="val">405.0</span>
-      <span class="note">405.0 跌破月線 415.2（守年線）</span>
+      <span class="val">404.2</span>
+      <span class="note">404.2 跌破月線 415.1（守年線）</span>
     </div>
     
   </div>
@@ -251,8 +251,8 @@
   <script>
     new Chart(document.getElementById('hist'), {
       type:'line',
-      data:{ labels:["07-02", "07-06", "07-08", "07-09", "07-12", "07-13", "07-14", "07-15", "07-16", "07-17", "07-19", "07-20", "07-21", "07-22", "07-23", "07-24", "07-27", "07-28", "07-29", "07-30", "08-01"],
-             datasets:[{ label:'泡沫壓力分數', data:[53.0, 47.0, 53.0, 50.0, 47.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 56.0, 58.0, 58.0, 58.0, 58.0, 58.0],
+      data:{ labels:["07-02", "07-06", "07-08", "07-09", "07-12", "07-13", "07-14", "07-15", "07-16", "07-17", "07-19", "07-20", "07-21", "07-22", "07-23", "07-24", "07-27", "07-28", "07-29", "07-30", "08-01", "08-02"],
+             datasets:[{ label:'泡沫壓力分數', data:[53.0, 47.0, 53.0, 50.0, 47.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 56.0, 58.0, 58.0, 58.0, 58.0, 58.0, 58.0],
                          borderColor:'#e67e22', backgroundColor:'#e67e2233',
                          fill:true, tension:0.25, pointRadius:2 }] },
       options:{ scales:{ y:{ min:0, max:100, ticks:{ color:'#8a94a0' }, grid:{ color:'#232c37' } },
