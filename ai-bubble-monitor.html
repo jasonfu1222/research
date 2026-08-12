@@ -55,7 +55,7 @@
 <body>
 <div class="wrap">
   <h1>AI 泡沫壓力監控儀表板</h1>
-  <div class="sub">更新時間：2026-08-11 21:56　·　資料源：FRED / multpl / yfinance（免金鑰）</div>
+  <div class="sub">更新時間：2026-08-12 22:00　·　資料源：FRED / multpl / yfinance（免金鑰）</div>
 
   <div class="guide">
     <h3>這張表在看什麼？怎麼讀？</h3>
@@ -87,14 +87,14 @@
   
   <div class="hero">
     <div>
-      <div class="score" style="color:#f39c12">44<small>/100</small></div>
-      <div class="band" style="color:#f39c12">中壓 / Mid</div>
+      <div class="score" style="color:#e67e22">56<small>/100</small></div>
+      <div class="band" style="color:#e67e22">高壓 / Late Cycle</div>
     </div>
     <div class="counts">
       <div class="cnt"><div class="n" style="color:var(--red)">3</div><div class="l">紅燈</div></div>
       <div class="cnt"><div class="n" style="color:var(--yellow)">0</div><div class="l">黃燈</div></div>
-      <div class="cnt"><div class="n" style="color:var(--green)">6</div><div class="l">綠燈</div></div>
-      <div class="cnt"><div class="n" style="color:var(--gray)">2</div><div class="l">待更</div></div>
+      <div class="cnt"><div class="n" style="color:var(--green)">5</div><div class="l">綠燈</div></div>
+      <div class="cnt"><div class="n" style="color:var(--gray)">3</div><div class="l">待更</div></div>
     </div>
   </div>
 
@@ -119,14 +119,14 @@
     <div class="sig">
       <span class="dot" style="background:var(--red)"></span>
       <span class="lbl">Shiller CAPE</span>
-      <span class="val">42.4</span>
+      <span class="val">42.2</span>
       <span class="note">>35 極端偏貴</span>
     </div>
     
     <div class="sig">
       <span class="dot" style="background:var(--red)"></span>
       <span class="lbl">Excess CAPE Yield</span>
-      <span class="val">-0.04%</span>
+      <span class="val">-0.06%</span>
       <span class="note"><1.35 股債相對估值警戒</span>
     </div>
     
@@ -146,7 +146,7 @@
       <span class="dot" style="background:var(--green)"></span>
       <span class="lbl">投資級利差 (IG OAS)</span>
       <span class="val">0.78%</span>
-      <span class="note">3M 變動 +0.02%，穩定</span>
+      <span class="note">3M 變動 +0.03%，穩定</span>
     </div>
     
     <div class="sig">
@@ -163,16 +163,16 @@
       <h2>流動性</h2>
       <span class="gweight">權重 20%</span>
       
-      <span class="gscore" style="color:var(--yellow)">
-        組壓力 50
+      <span class="gscore" style="color:var(--red)">
+        組壓力 100
       </span>
     </div>
     
     <div class="sig">
-      <span class="dot" style="background:var(--green)"></span>
+      <span class="dot" style="background:var(--gray)"></span>
       <span class="lbl">SOFR 季底跳升</span>
-      <span class="val">3.63%</span>
-      <span class="note">與均值差 -0bp，平穩</span>
+      <span class="val">N/A</span>
+      <span class="note">抓取失敗</span>
     </div>
     
     <div class="sig">
@@ -197,22 +197,22 @@
     <div class="sig">
       <span class="dot" style="background:var(--green)"></span>
       <span class="lbl">QQQ 那斯達克100</span>
-      <span class="val">719.5</span>
-      <span class="note">719.5 站上雙線</span>
+      <span class="val">724.9</span>
+      <span class="note">724.9 站上雙線</span>
     </div>
     
     <div class="sig">
       <span class="dot" style="background:var(--green)"></span>
       <span class="lbl">NVDA 輝達</span>
-      <span class="val">219.3</span>
-      <span class="note">219.3 站上雙線</span>
+      <span class="val">223.8</span>
+      <span class="note">223.8 站上雙線</span>
     </div>
     
     <div class="sig">
       <span class="dot" style="background:var(--green)"></span>
       <span class="lbl">TSM 台積電ADR</span>
-      <span class="val">421.2</span>
-      <span class="note">421.2 站上雙線</span>
+      <span class="val">430.9</span>
+      <span class="note">430.9 站上雙線</span>
     </div>
     
   </div>
@@ -251,9 +251,9 @@
   <script>
     new Chart(document.getElementById('hist'), {
       type:'line',
-      data:{ labels:["07-02", "07-06", "07-08", "07-09", "07-12", "07-13", "07-14", "07-15", "07-16", "07-17", "07-19", "07-20", "07-21", "07-22", "07-23", "07-24", "07-27", "07-28", "07-29", "07-30", "08-01", "08-02", "08-03", "08-04", "08-06", "08-07", "08-10", "08-11"],
-             datasets:[{ label:'泡沫壓力分數', data:[53.0, 47.0, 53.0, 50.0, 47.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 56.0, 58.0, 58.0, 58.0, 58.0, 58.0, 58.0, 58.0, 50.0, 50.0, 50.0, 44.0, 44.0],
-                         borderColor:'#f39c12', backgroundColor:'#f39c1233',
+      data:{ labels:["07-02", "07-06", "07-08", "07-09", "07-12", "07-13", "07-14", "07-15", "07-16", "07-17", "07-19", "07-20", "07-21", "07-22", "07-23", "07-24", "07-27", "07-28", "07-29", "07-30", "08-01", "08-02", "08-03", "08-04", "08-06", "08-07", "08-10", "08-11", "08-12"],
+             datasets:[{ label:'泡沫壓力分數', data:[53.0, 47.0, 53.0, 50.0, 47.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 56.0, 58.0, 58.0, 58.0, 58.0, 58.0, 58.0, 58.0, 50.0, 50.0, 50.0, 44.0, 44.0, 56.0],
+                         borderColor:'#e67e22', backgroundColor:'#e67e2233',
                          fill:true, tension:0.25, pointRadius:2 }] },
       options:{ scales:{ y:{ min:0, max:100, ticks:{ color:'#8a94a0' }, grid:{ color:'#232c37' } },
                          x:{ ticks:{ color:'#8a94a0' }, grid:{ display:false } } },
