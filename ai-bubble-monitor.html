@@ -55,7 +55,7 @@
 <body>
 <div class="wrap">
   <h1>AI 泡沫壓力監控儀表板</h1>
-  <div class="sub">更新時間：2026-09-08 04:14　·　資料源：FRED / multpl / yfinance（免金鑰）</div>
+  <div class="sub">更新時間：2026-09-08 21:51　·　資料源：FRED / multpl / yfinance（免金鑰）</div>
 
   <div class="guide">
     <h3>這張表在看什麼？怎麼讀？</h3>
@@ -87,13 +87,13 @@
   
   <div class="hero">
     <div>
-      <div class="score" style="color:#f39c12">44<small>/100</small></div>
+      <div class="score" style="color:#f39c12">47<small>/100</small></div>
       <div class="band" style="color:#f39c12">中壓 / Mid</div>
     </div>
     <div class="counts">
       <div class="cnt"><div class="n" style="color:var(--red)">3</div><div class="l">紅燈</div></div>
-      <div class="cnt"><div class="n" style="color:var(--yellow)">0</div><div class="l">黃燈</div></div>
-      <div class="cnt"><div class="n" style="color:var(--green)">6</div><div class="l">綠燈</div></div>
+      <div class="cnt"><div class="n" style="color:var(--yellow)">1</div><div class="l">黃燈</div></div>
+      <div class="cnt"><div class="n" style="color:var(--green)">5</div><div class="l">綠燈</div></div>
       <div class="cnt"><div class="n" style="color:var(--gray)">2</div><div class="l">待更</div></div>
     </div>
   </div>
@@ -171,8 +171,8 @@
     <div class="sig">
       <span class="dot" style="background:var(--green)"></span>
       <span class="lbl">SOFR 季底跳升</span>
-      <span class="val">3.66%</span>
-      <span class="note">與均值差 +2bp，平穩</span>
+      <span class="val">3.65%</span>
+      <span class="note">與均值差 +1bp，平穩</span>
     </div>
     
     <div class="sig">
@@ -190,29 +190,29 @@
       <span class="gweight">權重 15%</span>
       
       <span class="gscore" style="color:var(--green)">
-        組壓力 0
+        組壓力 17
       </span>
     </div>
     
     <div class="sig">
-      <span class="dot" style="background:var(--green)"></span>
+      <span class="dot" style="background:var(--yellow)"></span>
       <span class="lbl">QQQ 那斯達克100</span>
-      <span class="val">719.0</span>
-      <span class="note">719.0 站上雙線</span>
+      <span class="val">717.2</span>
+      <span class="note">717.2 跌破月線 717.3（守年線）</span>
     </div>
     
     <div class="sig">
       <span class="dot" style="background:var(--green)"></span>
       <span class="lbl">NVDA 輝達</span>
-      <span class="val">230.4</span>
-      <span class="note">230.4 站上雙線</span>
+      <span class="val">229.8</span>
+      <span class="note">229.8 站上雙線</span>
     </div>
     
     <div class="sig">
       <span class="dot" style="background:var(--green)"></span>
       <span class="lbl">TSM 台積電ADR</span>
-      <span class="val">428.9</span>
-      <span class="note">428.9 站上雙線</span>
+      <span class="val">434.9</span>
+      <span class="note">434.9 站上雙線</span>
     </div>
     
   </div>
@@ -252,7 +252,7 @@
     new Chart(document.getElementById('hist'), {
       type:'line',
       data:{ labels:["07-02", "07-06", "07-08", "07-09", "07-12", "07-13", "07-14", "07-15", "07-16", "07-17", "07-19", "07-20", "07-21", "07-22", "07-23", "07-24", "07-27", "07-28", "07-29", "07-30", "08-01", "08-02", "08-03", "08-04", "08-06", "08-07", "08-10", "08-11", "08-12", "08-13", "08-14", "08-16", "08-17", "08-18", "08-19", "08-21", "08-24", "08-25", "08-26", "08-27", "08-29", "08-31", "09-01", "09-02", "09-03", "09-04", "09-08"],
-             datasets:[{ label:'泡沫壓力分數', data:[53.0, 47.0, 53.0, 50.0, 47.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 56.0, 58.0, 58.0, 58.0, 58.0, 58.0, 58.0, 58.0, 50.0, 50.0, 50.0, 44.0, 44.0, 56.0, 44.0, 44.0, 44.0, 44.0, 50.0, 47.0, 44.0, 53.0, 50.0, 50.0, 44.0, 53.0, 47.0, 58.0, 50.0, 50.0, 44.0, 44.0],
+             datasets:[{ label:'泡沫壓力分數', data:[53.0, 47.0, 53.0, 50.0, 47.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 56.0, 58.0, 58.0, 58.0, 58.0, 58.0, 58.0, 58.0, 50.0, 50.0, 50.0, 44.0, 44.0, 56.0, 44.0, 44.0, 44.0, 44.0, 50.0, 47.0, 44.0, 53.0, 50.0, 50.0, 44.0, 53.0, 47.0, 58.0, 50.0, 50.0, 44.0, 47.0],
                          borderColor:'#f39c12', backgroundColor:'#f39c1233',
                          fill:true, tension:0.25, pointRadius:2 }] },
       options:{ scales:{ y:{ min:0, max:100, ticks:{ color:'#8a94a0' }, grid:{ color:'#232c37' } },
